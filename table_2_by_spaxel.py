@@ -65,7 +65,7 @@ for i in range(len(plate)):
     
     for l in range(tot_spaxel):    # loop through each spaxel
 
-        sys.stdout.write('\r'+('   Importaing data from spaxel {}/{}'.format(l+1,tot_spaxel)))
+        sys.stdout.write('\r'+('   Importing data from spaxel {}/{}'.format(l+1,tot_spaxel)))
         row = []                   # initialize row, we will append the data for each column
         row.append(plate[i])       # note plate and ifu are indexed by 'i', this makes it so every spaxel in the 
         row.append(ifu[i])            # same galaxy has the same plate and ifu
