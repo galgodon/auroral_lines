@@ -40,7 +40,7 @@ for i in range(len(plate)):
 #     row.append(.flatten()[l])  
 # =============================================================================
     for l in range(tot_spaxel):    # loop through each sapxel
-        sys.stdout.write('\r'+('   Importaing data from spaxel {}/{}'.format(l+1,tot_spaxel)))
+        sys.stdout.write('\r'+('   Importing data from spaxel {}/{}'.format(l+1,tot_spaxel)))
         row = []
         row.append(plate[i])
         row.append(ifu[i])
