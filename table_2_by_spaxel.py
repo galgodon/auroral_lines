@@ -59,7 +59,7 @@ for i in range(len(plate)):
     
     print('Galaxy {}/{}'.format(i+1,len(plate)))  # print statement to visually check progress
     
-    maps_file = 'data/manga-{0}-{1}-MAPS-HYB10-GAU-MILESHC.fits.gz'.format(plate[i],ifu[i])  # load in maps file for this galaxy
+    maps_file = '/data/manga/spectro/analysis/MPL-7/HYB10-GAU-MILESHC/{0}/{1}/manga-{0}-{1}-MAPS-HYB10-GAU-MILESHC.fits.gz'.format(plate[i],ifu[i])
     maps = fits.open(maps_file)
     
     good_spaxel = (maps['BINID'].data[0,:,:].flatten() != -1)   # ignore useless spaxels (like the corners)
