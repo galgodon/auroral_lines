@@ -125,25 +125,3 @@ for i in range(len(plate)):
 table.write('data/spaxel_data_table.fits', format='fits',overwrite=True)
 
 # mask>0 and ivar >0
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
